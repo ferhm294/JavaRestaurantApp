@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fernandohernandez.proyecto2.controladores.MainController">
+   <children>
+      <MenuBar style="-fx-font-size: 12px;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Menú del Restaurante">
+            <items>
+              <MenuItem fx:id="AgregarProducto" mnemonicParsing="false" onAction="#mostrarAgregarProducto" text="Agregar Producto" />
+                  <MenuItem fx:id="ModificarProducto" mnemonicParsing="false" onAction="#mostrarModificarProducto" text="Modificar Producto" />
+                  <MenuItem fx:id="EliminarProducto" mnemonicParsing="false" onAction="#mostrarEliminarProducto" text="Eliminar Producto" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ordenes">
+               <items>
+                  <MenuItem fx:id="IngresarOrden" mnemonicParsing="false" onAction="#mostrarIngresarOrden" text="Ingresar Orden" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Reportes">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#mostrarReporteCompleto" text="Completo" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarReporteFechas" text="Rango de Fechas" />
+                  <MenuItem mnemonicParsing="false" onAction="#mostrarReporteNumOrd" text="Número de Orden" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox fx:id="contentVBox" alignment="CENTER" prefHeight="1058.0" prefWidth="1920.0">
+         <!-- Aquí vamos a cargar el contenido de cada vista -->
+      </VBox>
+   </children>
+</VBox>

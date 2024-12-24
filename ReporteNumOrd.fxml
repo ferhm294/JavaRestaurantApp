@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1058.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fernandohernandez.proyecto2.controladores.ReporteNumOrdController">
+   <children>
+      <Label layoutX="701.0" layoutY="29.0" text="Reporte por Número de Orden">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonGenerarReporte" layoutX="1531.0" layoutY="86.0" mnemonicParsing="false" onAction="#generarReporte" scaleX="2.0" scaleY="2.0" text="Generar Reporte" />
+      <Button fx:id="botonCancelar" layoutX="1764.0" layoutY="86.0" mnemonicParsing="false" onAction="#mostrarBienvenida" scaleX="2.0" scaleY="2.0" text="Cancelar" />
+      <TextArea fx:id="txtAReporte" disable="true" layoutX="14.0" layoutY="191.0" prefHeight="852.0" prefWidth="1893.0" styleClass=".text" />
+      <Label layoutX="753.0" layoutY="126.0" text="Número de Orden">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="entradaNumOrd" layoutX="961.0" layoutY="131.0" prefHeight="25.0" prefWidth="184.0" />
+   </children>
+</AnchorPane>
